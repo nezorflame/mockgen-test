@@ -2,6 +2,7 @@ package client
 
 import "context"
 
-type Client interface {
+// Producer is an example interface which we'll use for mock generation
+type Producer interface {
 	Produce(ctx context.Context, objects []string) error
 }
